@@ -1,0 +1,79 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+    "hd hd hd hd hd hd "
+    "as b1 b2 b3 b4 b5"
+    "as b6 b6 b7 b7 b7"
+    "ft ft ft ft ft ft";
+}
+
+.header {
+    background-color: green;
+    grid-area: hd;
+}
+
+.aside {
+    background-color: yellow;
+    grid-area: as;
+}
+
+.footer {
+    background-color: blue;
+    grid-area: ft;
+}
+
+.block1 {
+    background-color: orange;
+    grid-area: b1;
+}
+
+.block2 {
+    background-color: orange;
+    grid-area: b2;
+}
+
+.block3 {
+    background-color: orange;
+    grid-area: b3;
+}
+
+.block4 {
+    background-color: orange;
+    grid-area: b4;
+}
+
+.block5 {
+    background-color: orange;
+    grid-area: b5;
+}
+
+.block6 {
+    background-color: orange;
+    grid-area: b6;
+}
+
+.block7 {
+    background-color: orange;
+    grid-area: b7;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas:
+       "hd"
+       "as"
+       "b1"
+       "b2"
+       "b3"
+       "b4"
+       "b5"
+       "b6"
+       "b7"
+       "ft"
+    }
+}
